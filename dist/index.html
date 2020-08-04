@@ -36,28 +36,64 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
 
     <link rel="stylesheet" href="styles/main.min.css">
+
+    <!-- Global site tag (gtag.min.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BVE8P17MRK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BVE8P17MRK');
+    </script>
 </head>
 
 <body>
-    <section class="info">
-    <div class="container">
-        <div class="info__header">
-            <h1 class="info__header--h1">Andrew Shubnikov</h1>
-            <h2 class="info__header--h2">Web-developer</h2>
+    <section class="index">
+    <div class="index__container">
+        <div class="index__header">
+            <h1 class="index__header--h1">Andrew Shubnikov</h1>
+            <h2 class="index__header--h2">Web-developer</h2>
         </div>
-        <div class="info__links">
-            <a href="https://vk.com/shbov" class="info__links--link">
+        <div class="index__links">
+            <a href="https://vk.com/shbov" class="index__links--link">
                 <i class="icon icon-vk"></i>
             </a>
-            <a href="https://github.com/shbov" class="info__links--link">
+            <a href="https://github.com/shbov" class="index__links--link">
                 <i class="icon icon-github"></i>
             </a>
-            <a href="https://t.me/shbov" class="info__links--link">
+            <a href="https://t.me/shbov" class="index__links--link">
                 <i class="icon icon-telegram"></i>
             </a>
         </div>
     </div>
 </section>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(
+            k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.min.js", "ym");
+
+    ym(66175132, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+    });
+</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/66175132" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
 </body>
 
 </html>
