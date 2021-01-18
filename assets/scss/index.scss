@@ -1,3 +1,14 @@
+@import 'smart-grid';
+
+.container {
+    @include container();
+    @include sm(max-width, rem(510));
+    @include md(max-width, rem(690));
+    @include lg(max-width, rem(930));
+    @include xl(max-width, rem(1110));
+}
+
 body {
-  min-height: 100vh;
+    background: #0f0f0f;
+    color: #fff;
 }
