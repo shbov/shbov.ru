@@ -1,14 +1,44 @@
 @import 'smart-grid';
+@import 'varriables';
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 .container {
-    @include container();
-    @include sm(max-width, rem(510));
-    @include md(max-width, rem(690));
-    @include lg(max-width, rem(930));
-    @include xl(max-width, rem(1110));
+  @include container();
+  @include sm(max-width, rem(510));
+  @include md(max-width, rem(690));
+  @include lg(max-width, rem(930));
+  @include xl(max-width, rem(1110));
 }
 
 body {
-    background: #0f0f0f;
-    color: #fff;
+  background: $bg-color;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: $secondary-color;
+}
+
+.row {
+  @include row-flex();
+
+  .col-4 {
+    @include col();
+    @include size(4);
+  }
+}
+
+p {
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nunito Sans', 'Roboto', sans-serif;
+  color: $primary-color;
 }
