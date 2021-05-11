@@ -2,13 +2,11 @@ body {
     font-family: Futura PT;
     font-style: normal;
     font-weight: normal;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 
     @media screen and (prefers-color-scheme: dark) {
         background: #000;
-    }
-
-    @media (max-width:767px) {
-        height: 90vh;
     }
 }
 
